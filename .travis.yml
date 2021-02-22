@@ -1,0 +1,12 @@
+os: osx
+osx_image: xcode12.3
+language: objective-c
+merge_mode: deep_merge
+sudo: true
+jobs:
+  include:
+  - stage: Pull Request
+    if: type = pull_request
+    before_install:
+    - sudo sntp -sS time.apple.com
+    - travis_wait 20 bash ./Scripts/ci-setup.sh

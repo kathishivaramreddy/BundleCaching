@@ -23,8 +23,5 @@ end
 # Dependencies of developer.rb
 group :development do
   gem 'xcodeproj'
-  gem 'inifile'  
-  path "./feingoldtech-ios-devtools" do
-    gem 'devtools'
-  end
+  gem 'inifile'
 end

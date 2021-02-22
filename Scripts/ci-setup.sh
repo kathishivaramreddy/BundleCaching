@@ -2,4 +2,4 @@
 
 set -e
 
-bundle install --with test --without development
+bundle install --local --with test --without development
